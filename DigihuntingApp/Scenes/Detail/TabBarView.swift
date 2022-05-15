@@ -26,6 +26,9 @@ struct TabBarView: View {
                 }
                 .tag(1)
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationTitle("")
     }
 }
 
