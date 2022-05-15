@@ -24,3 +24,11 @@ If we tap a cell we can see a Detail Screen with different elements:
 - Map: with interaction enabled
 
 ![Passporter ScreenShot app](exampleDetailInstructions.png)
+
+In this screen we can tap on User Tab and we will see a UserScreen.
+
+![Passporter ScreenShot app](exampleDetailInstructions.png)
+
+- if we don't fill both fields, the alert won't show on screen, otherwise if we add some username and password, we will see an alert that confirms user is already logged (Persistence is not included in the project, so when we close the alert, the app will do nothing) 
+
+![Passporter ScreenShot app](exampleDetailInstructions.png)

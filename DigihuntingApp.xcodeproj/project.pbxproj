@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28227E2A2831558B00AE6872 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28227E292831558B00AE6872 /* TabBarView.swift */; };
+		28227E2C2831564900AE6872 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28227E2B2831564900AE6872 /* UserView.swift */; };
 		28BB6CDE282D665900A0CB1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB6CDD282D665900A0CB1A /* AppDelegate.swift */; };
 		28BB6CE0282D665900A0CB1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB6CDF282D665900A0CB1A /* SceneDelegate.swift */; };
 		28BB6CE7282D665E00A0CB1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BB6CE6282D665E00A0CB1A /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28227E292831558B00AE6872 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		28227E2B2831564900AE6872 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		28BB6CDA282D665900A0CB1A /* DigihuntingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigihuntingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BB6CDD282D665900A0CB1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BB6CDF282D665900A0CB1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 			children = (
 				28BB6D3A282E738300A0CB1A /* DetailView.swift */,
 				28BB6D51283012EA00A0CB1A /* ModalView.swift */,
+				28227E292831558B00AE6872 /* TabBarView.swift */,
+				28227E2B2831564900AE6872 /* UserView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -460,6 +466,8 @@
 				28BB6D20282D6A0B00A0CB1A /* HomeRouter.swift in Sources */,
 				28BB6D22282D6A3D00A0CB1A /* HomeResponse.swift in Sources */,
 				28BB6D11282D68C900A0CB1A /* HomeViewController.swift in Sources */,
+				28227E2C2831564900AE6872 /* UserView.swift in Sources */,
+				28227E2A2831558B00AE6872 /* TabBarView.swift in Sources */,
 				28BB6D52283012EB00A0CB1A /* ModalView.swift in Sources */,
 				28BB6D2E282D6BE000A0CB1A /* SpinnerViewController.swift in Sources */,
 				28BB6D28282D6B8400A0CB1A /* UIView+Extensions.swift in Sources */,
@@ -642,6 +650,7 @@
 				INFOPLIST_FILE = DigihuntingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -670,6 +679,7 @@
 				INFOPLIST_FILE = DigihuntingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
