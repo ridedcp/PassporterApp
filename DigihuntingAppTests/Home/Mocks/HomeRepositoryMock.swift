@@ -13,7 +13,7 @@ final class HomeRepositoryMock: CommonRepositoryInterface {
     var success: Bool = false
     var cityArray = [CityModel]()
     
-    func fetchCity(city: String, completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
+    func fetchCity(completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
             
         cityArray.append(CityFactory.createCity())
         

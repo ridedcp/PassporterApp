@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NetworkingInterface {
-    func createSimpleGetRequest(url: String, city: String) -> URLRequest?
+    func createSimpleGetRequest(url: String) -> URLRequest?
     func decodeSimpleObject<T: Codable>(data: Data) -> T?
 }
 
@@ -18,7 +18,7 @@ final class Networking: NetworkingInterface {
         static let baseUrl = "http://myjson.dit.upm.es/api/bins/e8zj"
     }
     
-    private func createValidUrl(url: String, city: String) -> URL? {
+    private func createValidUrl(url: String) -> URL? {
         guard let urlComponents = URLComponents(string: url) else {
             return nil
         }
@@ -29,8 +29,8 @@ final class Networking: NetworkingInterface {
         return urlString
     }
     
-    func createSimpleGetRequest(url: String, city: String) -> URLRequest? {
-        guard let completeUrl = createValidUrl(url: url, city: city) else {
+    func createSimpleGetRequest(url: String) -> URLRequest? {
+        guard let completeUrl = createValidUrl(url: url) else {
             return nil
         }
         

@@ -13,7 +13,7 @@ final class HomeInteractorMock: HomeInteractorInterface {
     var success: Bool = false
     var cityArray = [CityModel]()
     
-    func getCity(city: String, completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
+    func getCity(completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
         
         cityArray.append(CityFactory.createCity())
         

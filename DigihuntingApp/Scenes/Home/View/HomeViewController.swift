@@ -37,7 +37,7 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupConstraints()
-        presenter?.getCity(city: "")
+        presenter?.getCity()
     }
     
     private func setupView() {

@@ -21,12 +21,11 @@ class HomeInteractorTests: XCTestCase {
     
     func testGetCity_whenRepositoryFailures_returnsError() {
         //Given
-        let city = ""
         repositoryMock.success = false
         let error = NetworkingError.genericError
         
         //When
-        sut?.getCity(city: city, completion: { result in
+        sut?.getCity(completion: { result in
             switch result {
             case .failure(let networkingError):
                 //Then
@@ -40,11 +39,10 @@ class HomeInteractorTests: XCTestCase {
     
     func testGetCity_whenRepositorySuccess_returnsCities() {
         //Given
-        let city = "Barcelona"
         repositoryMock.success = true
         
         //When
-        sut?.getCity(city: city, completion: { result in
+        sut?.getCity(completion: { result in
             switch result {
             case .success(let city):
                 //Then

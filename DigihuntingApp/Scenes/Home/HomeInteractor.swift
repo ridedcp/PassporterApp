@@ -15,8 +15,8 @@ final class HomeInteractor: HomeInteractorInterface {
         self.repository = repository
     }
     
-    func getCity(city: String, completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
-        repository.fetchCity(city: city) { result in
+    func getCity(completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
+        repository.fetchCity() { result in
             switch result {
             case .success(let data):
                 if let cities = data, !cities.isEmpty {

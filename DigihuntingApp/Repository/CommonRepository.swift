@@ -14,8 +14,7 @@ enum NetworkingError: Error {
 }
 
 protocol CommonRepositoryInterface {
-    func fetchCity(city: String,
-                        completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void)
+    func fetchCity(completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void)
 }
 
 final class CommonRepository: CommonRepositoryInterface {
@@ -29,10 +28,9 @@ final class CommonRepository: CommonRepositoryInterface {
         self.session = session
     }
     
-    func fetchCity(city: String,
-                   completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
+    func fetchCity(completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void) {
         
-        guard let request = networking.createSimpleGetRequest(url: Networking.Url.baseUrl, city: city) else {
+        guard let request = networking.createSimpleGetRequest(url: Networking.Url.baseUrl) else {
             return
         }
         

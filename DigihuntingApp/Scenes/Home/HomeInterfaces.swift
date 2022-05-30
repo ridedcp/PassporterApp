@@ -18,12 +18,12 @@ protocol HomeViewControllerInterface: AnyObject {
 }
 
 protocol HomePresenterInterface {
-    func getCity(city: String)
+    func getCity()
     func navigateToDetailVC(city: CityModel)
 }
 
 protocol HomeInteractorInterface {
-    func getCity(city: String, completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void)
+    func getCity(completion: @escaping (Result<Set<CityModel>?, NetworkingError>) -> Void)
 }
 
 protocol HomeRouterInterface {

@@ -18,9 +18,9 @@ final class HomePresenter: HomePresenterInterface {
         self.router = router
     }
     
-    func getCity(city: String) {
+    func getCity() {
         view?.showLoading()
-        interactor.getCity(city: city) { [weak self] result in
+        interactor.getCity { [weak self] result in
             switch result {
             case .success(let data):
                 self?.view?.cities.append(contentsOf: data ?? [])

@@ -26,11 +26,10 @@ class HomePresenterTests: XCTestCase {
     
     func testGetCity_whenInteractorSuccess_asignCitiesToViewAndCallReloadTable() {
         //Given
-        let city = ""
         interactorMock.success = true
         
         //When
-        sut.getCity(city: city)
+        sut.getCity()
         
         //Then
         XCTAssertNotNil(homeViewSpy.cities)
